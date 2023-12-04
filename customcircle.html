@@ -1,0 +1,63 @@
+<!-- https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#10.0
+https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16.0
+	—Each shape you create draws on top of all of your previous drawwings.
+	—In this case, the green circle is drawn over the black square:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="300" height="300">
+
+	</canvas>
+
+	<script>
+		 	var sketch = document.getElementById('sketch');
+		  var context = sketch.getContext("2d");
+      
+      var radius = prompt("Enter a radius (Between 1-300 pls) ");
+      var color = prompt("Enter a color (I Suggest Red) ");
+     
+      parseInt(radius, 1); //converting to an INTEGER 
+      parseInt(color, 1); //what would that mean here tho?
+      
+      if (radius <= 300 ==( color == "red", i >= 1, i == i++)) {
+        customCircle(context,radius,color,sketch);
+
+              console.log(radius)
+            } else if (radius < 1) {
+                   console.log(i);
+              } else{
+
+              if (i == 1) {
+                console.log(userint);
+              }
+                else{
+                  console.log()
+                
+
+              }
+          }
+        
+
+
+		function draw(userint) {
+        
+			context.fillStyle = "#ff0000";
+           
+            context.beginPath(userint);
+			context.arc( 250, 110, 50, 0, 2 * Math.PI, true); //Clockwise = true
+            context.closePath(userint);
+			context.fill(userint);
+	// context.arc(x, y, radius, start angle, end angle, clockwise);
+	// "#ff0000" - RED
+
+		}
+    
+	</script>
+
+</body>
+</html>
