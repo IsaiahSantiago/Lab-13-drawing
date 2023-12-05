@@ -1,0 +1,48 @@
+<!-- https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#10.0
+https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16.0
+	—Each shape you create draws on top of all of your previous drawwings.
+	—In this case, the green circle is drawn over the black square:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="300" height="300">
+
+	</canvas>
+
+	<script>
+function draw() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+
+    for(var r = 1; r <= 11; r++) //vertical values
+        SquareandCircle(context, r);
+}
+ 
+function SquareandCircle(context, r) {
+// Horizontal values must be changed remember
+    if(r%2==1) {        
+        context.fillstyle = "#A9F50C";                
+        context.fillRect(r * 45, 50, 30, 30);
+        
+    } else if (r%2==0) {
+            context.beginPath();
+            context.fillStyle = "#0000FF"; // <--Blue / A9F50C = Neon Green
+			context.arc((r * 45 + 15), 65, 15, 0, 2 * Math.PI, true); //Clockwise = true
+			// context.arc(x, y, radius, start, end agnle, clockwise);
+            context.closePath();
+			context.fill();
+        }
+}
+
+
+
+	</script>
+
+</body>
+</html>
+
