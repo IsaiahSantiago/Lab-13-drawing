@@ -1,0 +1,112 @@
+<!-- https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#10.0
+https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16.0
+	—Each shape you create draws on top of all of your previous drawwings.
+	—In this case, the green circle is drawn over the black square:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="3000" height="3000">
+
+	</canvas>
+
+	<script>
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+
+			context.fillStyle = (i = "#FFFFFF"); //White - FFFFFF
+            context.fillStyle = (r = "#000000"); //Black - 000000
+//you can make it so that the fillstyle can change for each square later
+            for (var i = 1; i <= 8; i++); 
+            for (var r = 1; r <= 8; r++) { 
+            context.fillRect((r * 45 + 15), 50, 30, 30);
+            context.beginPath();
+            context.fillstyle = "#A9F50C";                
+            context.closePath();
+			context.fill();
+            }    if(i%2==0) {
+//make sure values equal 1 so it starts on the 2nd row of the site
+            } else if (r%4==2); {
+            for (var i = 9; i <= 8; i++) {
+            context.fillRect((i * 45 + 35), 50, 30, 30);
+            context.beginPath();
+            context.fillstyle = "#A9F50C";                
+            context.closePath();
+			context.fill();
+            }
+
+		}
+    }
+        
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+function draw() {
+    var sketch = document.getElementById('sketch');
+   var context = sketch.getContext("2d");
+
+   context.fillStyle = "#A9F50C"; //Neon Green
+//you can make it so that the fillstyle can change for each square later
+
+   for (let r = 1; r = 7; r++) {
+// Outer Loop
+
+//make sure values equal 1 so it starts on the 2nd row of the site
+       for (let i = 1; i = 4; i++) {
+
+   context.beginPath();
+   context.arc((i * 50), (r * 50), 20, 0, 2 * Math.PI, true); //Clockwise = true
+   // context.arc(x, y, radius, start, end agnle, clockwise);
+   context.closePath();
+   context.fill();
+   // CIRCLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#13.0
+       // context.beginPath();
+       // context.arc(x, y, radius, start angle, end angle, clockwise);
+       // context.closePath();
+       // context.fill();
+
+
+   }
+
+}
+}
+
+
+
+function draw() {
+    var sketch = document.getElementById('sketch');
+   var context = sketch.getContext("2d");
+
+for(var r = 0; r = 8; r++) //vertical values
+SquareandCircle(context, r);
+}
+
+function SquareandCircle(context, r) {
+   for (var i = 1; i = 5; i++) {
+   context.fillstyle = "#A9F50C";
+         
+if(r%2==1)    
+for (var i = 1; i = 8; i++) {    
+context.fillstyle = "#A9F50C";                
+context.fillRect((r * 45 + 15), 50, 30, 30);
+
+} else if (r%2==1) 
+for (var i = 2; i = 8; i++) {
+context.fillstyle = "#A9F50C";
+context.fillRect((r * 85 + 30), 100, 30, 30);
+   }
+ }
+}
+
